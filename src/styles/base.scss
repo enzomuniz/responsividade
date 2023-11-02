@@ -1,0 +1,87 @@
+
+@import '_variaveis.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+text-decoration: none;
+color: $preto;
+}
+ul, li{
+list-style: none;
+}
+.text-big{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.one-column{
+    width: 100vw;
+}
+.two-column{
+    width: 60vw;
+}
+.banner{
+    background: url(https://images3.alphacoders.com/132/1322308.jpeg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    height: 50vw;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: $max-mobile) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .two-column{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .inner-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
